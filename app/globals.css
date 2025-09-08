@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* Base styles for HTML and Body */
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100%;
+}
+
+/* Custom CSS Variables for Theme */
+:root {
+  --background: 0 0% 100%; /* White */
+  --foreground: 220 30% 10%; /* Dark gray */
+
+  --card: 0 0% 100%;
+  --card-foreground: 220 30% 10%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 30% 10%;
+
+  --primary: 252 75% 60%; /* Vibrant purple */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 210 20% 95%; /* Light gray */
+  --secondary-foreground: 220 30% 20%;
+
+  --muted: 210 20% 95%;
+  --muted-foreground: 215 15% 45%;
+
+  --accent: 210 20% 95%;
+  --accent-foreground: 220 30% 20%;
+
+  --destructive: 0 80% 50%; /* Red */
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 210 20% 88%;
+  --input: 210 20% 88%;
+  --ring: 252 75% 60%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 220 30% 8%; /* Dark slate blue/gray */
+  --foreground: 210 40% 98%; /* Off-white */
+
+  --card: 220 30% 8%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 220 30% 8%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 252 75% 60%; /* Vibrant purple */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 220 20% 15%; /* Darker slate */
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 220 20% 15%;
+  --muted-foreground: 215 15% 65%;
+
+  --accent: 220 20% 15%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 60% 50%; /* Red */
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 220 20% 25%;
+  --input: 220 20% 25%;
+  --ring: 252 75% 60%;
+}
+
+/* Global Typography */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-sans; /* Use Geist Sans for headings */
+}
+
+p {
+  @apply font-sans;
+}
+
+/* Ensure full height for app */
+#__next { /* Next.js root element */
+  height: 100%;
+}
+
+/* Small utility to ensure images are not styled with default browser styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
